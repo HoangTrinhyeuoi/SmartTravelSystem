@@ -1,0 +1,53 @@
+﻿<Window x:Class="TravelManagementApp.Views.AddEditTripWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add/Edit Trip" Height="350" Width="450"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,5">
+            <Label Content="Code:" Width="120"/>
+            <TextBox x:Name="txtCode" Width="250"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,5">
+            <Label Content="Destination:" Width="120"/>
+            <TextBox x:Name="txtDestination" Width="250"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,5">
+            <Label Content="Price:" Width="120"/>
+            <TextBox x:Name="txtPrice" Width="250"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,5">
+            <Label Content="Status:" Width="120"/>
+            <ComboBox x:Name="cboStatus" Width="250">
+                <ComboBoxItem Content="Available"/>
+                <ComboBoxItem Content="Booked"/>
+            </ComboBox>
+        </StackPanel>
+
+        <Label x:Name="lblError" Grid.Row="4" 
+               Foreground="Red" 
+               Margin="120,10,0,0"/>
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal" 
+                    HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button x:Name="btnSave" Content="Save" 
+                    Width="100" Click="BtnSave_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" 
+                    Width="100" Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

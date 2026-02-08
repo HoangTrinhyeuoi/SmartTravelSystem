@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelDataAccess", "TravelDataAccess\TravelDataAccess.csproj", "{B77E1D58-9F47-41FE-B06C-6A62D9E16DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelManagementApp", "TravelManagementApp\TravelManagementApp.csproj", "{C31367A2-CA3B-4A01-90CB-674EE6A09DA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B77E1D58-9F47-41FE-B06C-6A62D9E16DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77E1D58-9F47-41FE-B06C-6A62D9E16DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77E1D58-9F47-41FE-B06C-6A62D9E16DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77E1D58-9F47-41FE-B06C-6A62D9E16DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31367A2-CA3B-4A01-90CB-674EE6A09DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31367A2-CA3B-4A01-90CB-674EE6A09DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31367A2-CA3B-4A01-90CB-674EE6A09DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31367A2-CA3B-4A01-90CB-674EE6A09DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D78F8967-3FCE-4A70-9DAE-C5C7D647F162}
+	EndGlobalSection
+EndGlobal
