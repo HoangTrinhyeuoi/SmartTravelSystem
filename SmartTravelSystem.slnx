@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TravelDataAccess/TravelDataAccess.csproj" />
+  <Project Path="TravelManagementApp/TravelManagementApp.csproj" />
+</Solution>

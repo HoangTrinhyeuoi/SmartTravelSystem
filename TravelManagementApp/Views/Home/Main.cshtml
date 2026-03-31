@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Main Menu";
+}
+
+<h2 class="mb-3">Main Menu</h2>
+<p class="text-muted">Choose a function below.</p>
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Trip List</h5>
+                <p class="card-text">Display trips and add/edit trip information.</p>
+                <a asp-controller="Trip" asp-action="Index" class="btn btn-primary">Open Trip List</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">My Bookings</h5>
+                <p class="card-text">View, filter, update status, and create bookings.</p>
+                <a asp-controller="Booking" asp-action="Index" class="btn btn-primary">Open My Bookings</a>
+            </div>
+        </div>
+    </div>
+</div>

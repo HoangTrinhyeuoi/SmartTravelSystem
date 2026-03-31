@@ -1,0 +1,39 @@
+@model UpdateBookingStatusViewModel
+@{
+    ViewData["Title"] = "Update Booking Status";
+    var statuses = (string[])ViewBag.Statuses;
+}
+
+<h2 class="mb-3">Update Booking Status</h2>
+
+<form asp-action="EditStatus" method="post" class="card p-3 shadow-sm">
+    <input asp-for="BookingID" type="hidden" />
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+    <div class="mb-2">
+        <strong>Trip:</strong> @Model.TripCode - @Model.Destination
+    </div>
+    <div class="mb-3">
+        <strong>Booking Date:</strong> @Model.BookingDate.ToString("yyyy-MM-dd")
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Status" class="form-label"></label>
+        <select asp-for="Status" class="form-select">
+            @foreach (var status in statuses)
+            {
+                <option value="@status" selected="@(Model.Status == status)">@status</option>
+            }
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Back</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

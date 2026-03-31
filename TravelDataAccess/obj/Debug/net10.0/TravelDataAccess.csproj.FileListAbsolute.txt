@@ -1,0 +1,12 @@
+D:\PRN222\Assignment_1\TravelDataAccess\bin\Debug\net10.0\TravelDataAccess.deps.json
+D:\PRN222\Assignment_1\TravelDataAccess\bin\Debug\net10.0\TravelDataAccess.dll
+D:\PRN222\Assignment_1\TravelDataAccess\bin\Debug\net10.0\TravelDataAccess.pdb
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\TravelDataAccess.csproj.AssemblyReference.cache
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\TravelDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\TravelDataAccess.AssemblyInfoInputs.cache
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\TravelDataAccess.AssemblyInfo.cs
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\TravelDataAccess.csproj.CoreCompileInputs.cache
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\TravelDataAccess.dll
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\refint\TravelDataAccess.dll
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\TravelDataAccess.pdb
+D:\PRN222\Assignment_1\TravelDataAccess\obj\Debug\net10.0\ref\TravelDataAccess.dll

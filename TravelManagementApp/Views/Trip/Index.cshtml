@@ -1,0 +1,42 @@
+@model List<Trip>
+@{
+    ViewData["Title"] = "Trip List";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Trip List</h2>
+    <a asp-action="Create" class="btn btn-success">Add Trip</a>
+</div>
+
+@if (TempData["Success"] is string successMessage)
+{
+    <div class="alert alert-success">@successMessage</div>
+}
+
+<table class="table table-bordered table-striped align-middle">
+    <thead class="table-light">
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Destination</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th style="width: 120px;">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var trip in Model)
+        {
+            <tr>
+                <td>@trip.ID</td>
+                <td>@trip.Code</td>
+                <td>@trip.Destination</td>
+                <td>@trip.Price.ToString("0.00")</td>
+                <td>@trip.Status</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@trip.ID" class="btn btn-sm btn-outline-primary">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
